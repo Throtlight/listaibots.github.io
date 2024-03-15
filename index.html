@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Веб-приложения</title>
+<style>
+  @font-face {
+    font-family: 'San Francisco';
+    src: url('SanFrancisco.woff2') format('woff2'),
+         url('SanFrancisco.woff') format('woff'),
+         url('SanFrancisco.ttf') format('truetype');
+  }
+
+  body {
+    font-family: 'San Francisco', Arial, sans-serif;
+    background-color: #e5e5e5;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+  .app-list {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .app-item {
+    border-bottom: 1px solid #f2f2f2;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  .app-item:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  .app-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .app-name {
+    font-size: 16px;
+    color: #333;
+  }
+  .app-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  .app-link:hover .app-name {
+    text-decoration: underline;
+  }
+  .telegram-logo {
+    display: block;
+    margin: 10px auto;
+    width: 50px; /* Средний размер */
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.25));
+  }
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="header">Select</div>
+<div class="app-list">
+  <div class="app-item">
+    <a href="https://copilot.microsoft.com" class="app-link" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Microsoft_365_Copilot_Icon.svg" class="app-icon" alt="Copilot"/>
+      <div class="app-name">Copilot</div>
+    </a>
+  </div>
+  <div class="app-item">
+    <a href="https://claude.ai" class="app-link" target="_blank">
+      <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/claude-ai-icon.png" class="app-icon" alt="Claude"/>
+      <div class="app-name">Claude</div>
+    </a>
+  </div>
+  <div class="app-item">
+    <a href="https://gemini.google.com" class="app-link" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" class="app-icon" alt="Gemini"/>
+      <div class="app-name">Gemini</div>
+    </a>
+  </div>
+</div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" class="telegram-logo" alt="Telegram Logo"/>
+<div class="footer">©Все права защищены оригинальными создателями данных веб-приложений - Microsoft, Anthropic, Google</div>
+</body>
+</html>
